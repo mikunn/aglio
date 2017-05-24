@@ -7,7 +7,7 @@ try {
   theme = require('../lib/main');
 } catch (err) {
   require('coffee-script/register');
-  theme = require('../src/main');
+  theme = require('../src/main.coffee');
 }
 
 if (!fs.existsSync('./cache')) {
